@@ -39,4 +39,12 @@ describe('Secret Menu Items', () => {
   it('should exist have the title on the page', () => {
     cy.get('h1').should('contain', 'Secret Menu Items');
   });
+
+  for (const restaurant of restaurants) {
+    it(`should only show restaurants from select dropdown to match ${restaurant}`, () => {
+      // find the dropdown selector
+      // select an item
+      // table should contain only selected restaurant
+    })
+  }
 });

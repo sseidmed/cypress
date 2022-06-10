@@ -18,12 +18,14 @@ describe('Initial Page', () => {
 
 describe('Sign Up', () => {
   beforeEach(() => {
-    cy.visit('/echo-chamber/sign-up');
+    cy.visit('/echo-chamber/sign-in');
   });
 
   it('should require an email', () => {});
 
-  it('should require that the email actually be an email address', () => {});
+  it('should require that the email actually be an email address', () => {
+    // cy.get('[data-test="sign-up-email"]').type('test@email.com');
+  });
 
   it('should require a password when the email is present', () => {});
 });
